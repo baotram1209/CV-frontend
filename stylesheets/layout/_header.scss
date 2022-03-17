@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.primary-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+// MOBILE BURGER
+@include breakpoint-down(medium){
+    .primary-header {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center; 
+      
+    }
+
+  
+    .primary-navigation {
+        gap: 2em;
+        position: fixed;
+        inset: 0 0 0 50%; //shorthand for top right bottom left (When position is set to absolute or fixed, the top property specifies the distance between the element's outer margin of top edge and the inner border of the top edge of its containing block.) 
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        padding: min(30vh, 10rem) 2em; 
+        background-color: $second-background-color;
+        transform: translateX(100%); // to make the menu hidden before clicking burger
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url("background-img/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        border: 0;
+        top: 1rem;
+        right: 1rem;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        position: fixed;
+        background-image: url("background-img/icon-close.svg");
+    }
+}

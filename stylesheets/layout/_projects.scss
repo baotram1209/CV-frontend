@@ -1,0 +1,26 @@
+.project-list{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    "project-grid-item-1 project-grid-item-2"
+    "project-grid-item-3 project-grid-item-4"
+    ;
+    grid-gap: 3rem;
+    }
+    @for $i from 1 through 4 {
+        .project-grid-item-#{$i} {
+          grid-area: project-grid-item-#{$i};
+         border: 1px solid;
+          padding: 0.5rem;
+         }
+      }
+.project-img img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}

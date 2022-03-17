@@ -1,0 +1,21 @@
+
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-areas: 
+    "grid-item-1 grid-item-1"
+    "grid-item-2 grid-item-3"
+    ;
+    grid-gap: 0.2rem;
+    }
+    @for $i from 1 through 3 {
+        .feature-grid-item-#{$i} {
+          grid-area: grid-item-#{$i};
+          background-color: $background-color;
+          padding: 1rem;
+         }
+      }
+
+    .facts p {
+      margin-bottom: 1rem;
+    }  
