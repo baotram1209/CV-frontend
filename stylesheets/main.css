@@ -598,4 +598,54 @@ footer {
   border: 1px solid;
   border-radius: 5px;
   padding: 0.2rem;
+}
+
+body {
+  background: white;
+  transition: 0.2s linear;
+}
+
+.light-toggle {
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  height: 26px;
+  width: 54px;
+  background: #b6b6b6;
+  padding: 5px 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transform: scale(1.2);
+  box-shadow: 2px 1px 1px #333;
+}
+
+.label .ball {
+  background: white;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  transform: translateX(0px);
+  transition: transform 0.4s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.la-moon {
+  color: #34571a;
 }/*# sourceMappingURL=main.css.map */

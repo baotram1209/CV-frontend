@@ -36,7 +36,15 @@
             <li><a href="#contact-me">Contact me</a></li>
           </ul>
         </nav>
+<div class="light-toggle">
+  <input type="checkbox" class ="checkbox" id="dark-mode"/>
+  <label for="dark-mode" class="label">
+  <i class="las la-moon"></i>
+  <i class="las la-sun"></i>
 
+  <div class="ball"></div>
+</label>
+</div>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <!-- aria -control to say the button control the ul with id=primary-control -->
           <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
@@ -313,6 +321,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/darkmode.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
