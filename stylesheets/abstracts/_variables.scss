@@ -8,7 +8,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Roboto Slab', serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -34,14 +34,17 @@ $brand-color: rgb(52, 87, 26) !default;
 // /// @type Color
 // $mid-grey: rgb(153, 153, 153) !default;
 
-// /// Dark grey
-// /// @type Color
-// $dark-grey: rgb(68, 68, 68) !default;
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
 
 // MY CODE
 /// @type Color
 $background-color: rgba(246, 190, 0, 0.2 ) !default;
 $second-background-color: rgba(246, 190, 0, 0.9);
+$darkmode-text: rgb(255, 253, 208);
+$darkmode-nav-background: rgba(52, 87, 26, 0.9);
+$dark-green: rgb(34, 56, 17);
 // MY CODE
 
 

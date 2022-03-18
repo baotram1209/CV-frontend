@@ -22,6 +22,11 @@
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <meta name="theme-color" content="#fafafa" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="container">
@@ -36,15 +41,15 @@
             <li><a href="#contact-me">Contact me</a></li>
           </ul>
         </nav>
-<div class="light-toggle">
-  <input type="checkbox" class ="checkbox" id="dark-mode"/>
-  <label for="dark-mode" class="label">
-  <i class="las la-moon"></i>
-  <i class="las la-sun"></i>
+        <div class="light-toggle">
+          <input type="checkbox" class="checkbox" id="dark-mode" />
+          <label for="dark-mode" class="label">
+            <i class="las la-moon"></i>
+            <i class="las la-sun"></i>
 
-  <div class="ball"></div>
-</label>
-</div>
+            <div class="ball"></div>
+          </label>
+        </div>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <!-- aria -control to say the button control the ul with id=primary-control -->
           <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
@@ -79,20 +84,8 @@
 
       </article>
 
-      <article class="feature-grid-item-2 facts">
-        <h2>LITTLE FACTS</h2>
 
-        <p><i class="las la-globe"></i> Countries I've lived in:
-        </p>
-        <p> Vietnam, Finland, South-Korea, France</p>
-        <p><i class="las la-fish"></i> Hobbies: <p>
-        <p>Cooking, Gardening, Traveling, Photography</p>
-        <p><i class="las la-tv"></i> Favorite TV Show:
-        <p>
-        <p> Killing Eve</p>
-        </ul>
-      </article>
-      <article class="feature-grid-item-3">
+      <article class="feature-grid-item-2">
         <h2>SKILLS</h2>
         <h3>Tech skills</h3>
         <div class="tech-skills_list">
@@ -110,6 +103,21 @@
           <p>Anglais : C1 - C2 (Courant)</p>
           <p>Français : B2 - C1 (DELF B2)</p>
           <p>Viêtnamien : Langue maternelle</p>
+      </article>
+
+      <article class="feature-grid-item-3 facts">
+        <h2>LITTLE FACTS</h2>
+
+        <p><i class="las la-globe"></i> Countries I've lived in:
+        </p>
+        <p> Vietnam, Finland, South-Korea, France</p>
+        <p><i class="las la-fish"></i> Hobbies:
+        <p>
+        <p>Cooking, Gardening, Traveling, Photography</p>
+        <p><i class="las la-tv"></i> Favorite TV Show:
+        <p>
+        <p> Killing Eve</p>
+        </ul>
       </article>
     </section>
 
@@ -204,8 +212,43 @@
       <h2 id="parcours">PARCOURS</h2>
       <h3>Experience</h3>
       <h3>Education</h3>
-      <div class="line">a</div>
-      <article class="timeline-section">
+      <!-- Vertical line  -->
+
+      <div class="line"></div>
+
+
+      <div class="bead b1" data-anim="1"></div>
+      <div class="bead b2" data-anim="2"></div>
+      <div class="bead b3" data-anim="3"></div>
+      <div class="bead b4" data-anim="4"></div>
+      
+      <div class="bead b1" data-anim="1">&#127944;</div>
+      <div class="bead b2" data-anim="2">&#128167;</div>
+      <div class="bead b3" data-anim="3">&#128187;</div>
+      <div class="bead b4" data-anim="4">&#128293;</div>
+
+      <div class="part p1" data-anim="1">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempora temporibus nostrum reiciendis
+          neque totam maxime, magnam architecto, quidem inventore laborum sapiente. Obcaecati, in dolore. </p>
+      </div>
+      <div class="part p2" data-anim="2">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Suscipit, tempora temporibus nostrum reiciendis
+          neque totam maxime, magnam architecto, quidem inventore laborum sapiente. Obcaecati, in dolore. </p>
+      </div>
+      <div class="part p3" data-anim="3">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempora temporibus nostrum reiciendis
+          neque totam maxime, magnam architecto, quidem inventore laborum sapiente. Obcaecati, in dolore. </p>
+      </div>
+      <div class="part p4" data-anim="4">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, tempora temporibus nostrum reiciendis
+          neque totam maxime, magnam architecto, quidem inventore laborum sapiente. Obcaecati, in dolore. </p>
+      </div>
+
+      <!-- <article class="timeline-section">
         <div class="bead"></div>
         <div class="timeline-content">
           <time class="education">03-2022</time>
@@ -288,7 +331,7 @@
           <h5>Haaga-Helia University of Applied Sciences, Helsinki, Finland</h5>
 
       </article>
-    </section>
+    </section> -->
 
     <section class="contact sub-container">
       <h2 id="contact-me">CONTACT ME</h2>

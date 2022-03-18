@@ -38,6 +38,27 @@ transition: transform 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
 .checkbox:checked + .label .ball {
     transform: translateX(24px);
 }
-.la-moon {
-    color: $brand-color;
+
+
+// DARK MODE
+.dark,.dark .hero_icons *, .dark a{
+    background: $brand-color;
+    color: $darkmode-text;
+}
+.dark .primary-navigation{
+    background: $darkmode-nav-background;
+}
+
+.dark .mobile-nav-toggle {
+    background-repeat: no-repeat;
+}
+.dark .feature {
+    @for $i from 1 through 3 {
+        .feature-grid-item-#{$i} {
+        
+          background-color: $dark-green;
+         
+         }
+      }
+  
 }
