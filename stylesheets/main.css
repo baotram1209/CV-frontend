@@ -463,6 +463,16 @@ body {
   margin: 1rem;
 }
 
+.download-cv {
+  border: solid 1px;
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+.download-cv:hover {
+  background-color: #34571a;
+  color: #fffdd0;
+}
+
 .primary-navigation {
   display: flex;
   justify-content: space-evenly;
@@ -475,6 +485,7 @@ body {
 
 header {
   padding: 1rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -689,8 +700,45 @@ header {
   padding: 20px;
   border-radius: 3px;
   box-shadow: 0 10px 15px #34571a;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.p1 {
+  top: 80px;
+  left: calc(50% - 270px);
+}
+
+.p2 {
+  top: 386px;
+  left: calc(50% + 270px);
+}
+
+.p3 {
+  top: 692px;
+  left: calc(50% - 270px);
+}
+
+.p4 {
+  top: 1000px;
+  left: calc(50% + 270px);
+}
+
+@media (max-width: 63.9375em) {
+  .line {
+    position: relative;
+    left: 200px;
+  }
+
+  .bead {
+    left: calc(50% + 200px);
+  }
+
+  .part {
+    left: calc(50% - 50px);
+  }
+}
 .contact {
   text-align: center;
   margin-top: 2rem;

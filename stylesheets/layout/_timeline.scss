@@ -40,4 +40,38 @@
     padding: 20px;
     border-radius: 3px;
     box-shadow: 0 10px 15px $brand-color;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p1 {
+    top: 80px; // same value as the bead
+    left: calc(50% - 270px);
+}
+.p2 {
+    top: 386px;
+    left: calc(50% + 270px);
+}
+.p3 {
+    top: 692px;
+    left: calc(50% - 270px);
+}
+.p4 {
+    top: 1000px;
+    left: calc(50% + 270px);
+}
+
+// PHone
+@include breakpoint-down(medium){
+.line {
+    position: relative;
+    left: 200px;
+}
+.bead {
+left: calc(50% + 200px);
+}
+.part{
+    left : calc(50% - 50px);
+}
 }
