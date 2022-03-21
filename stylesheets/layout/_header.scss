@@ -18,7 +18,9 @@ header {
 // MOBILE BURGER
 @include breakpoint-down(medium){
    
-  
+  .header{
+      margin-bottom: 3rem;
+  }
     .primary-navigation {
         gap: 2em;
         position: fixed;
