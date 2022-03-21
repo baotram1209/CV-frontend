@@ -831,4 +831,12 @@ body {
 }
 .dark .feature .feature-grid-item-3 {
   background-color: #223811;
+}
+
+.dark .timeline, .dark .part {
+  background-color: #223811;
+}
+
+.dark .bead, .dark .line {
+  background-color: #fffdd0;
 }/*# sourceMappingURL=main.css.map */
